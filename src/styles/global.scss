@@ -1,0 +1,82 @@
+@import "_colors.scss";
+
+body{
+  margin: 0;
+  background-color: $main-bg;
+}
+
+.container{
+  padding-inline: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.container-full{
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.menu-btn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: none;
+  background: none;
+  &::before{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: $darkred;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    box-shadow: 0 10px 0 $darkred, 0 20px 0 $darkred;
+    transition: box-shadow 300ms;
+  }
+}
+
+.menu-btn.active{
+  &::before{
+    box-shadow: 5px 10px 0 $darkred, 10px 20px 0 $darkred;
+    transition: box-shadow 300ms;
+  }
+}
+
+.banner-action{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+  background-color: $darkred;
+  color: white;
+  font-weight: normal;
+  border: none;
+  border-top-left-radius: 5px;
+  font-size: 18px;
+  &:hover{
+    background-color: lighten($darkred, 5%)
+  }
+}
+
+@media (min-width: 1024px){
+  .menu-btn{
+    display: none;
+  }
+  .banner-action{
+    height: 60px;
+  }
+}

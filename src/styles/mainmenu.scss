@@ -1,0 +1,97 @@
+@import "_colors.scss";
+
+.main-menu{
+  display: block;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  //background-color: transparentize(gray, .5);
+  left: -100%;
+  font-family: sans-serif;
+  transition: left .3s;
+  z-index: -10;
+}
+
+.main-menu.show{
+  left: 0;
+  transition: left .3s;
+}
+
+.main-menu.show{
+  .main-menu__link{
+    left: 0;
+    @for $i from 1 through 6{
+      &:nth-child(#{$i}){
+        transition: #{$i * .125}s left ease-in;
+      }
+    }
+  }
+}
+
+.main-menu__list{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main-menu__link{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparentize(white, .05);
+  transition: all .3s;
+  position: relative;
+  left: -50%;
+  color: $graytext;
+  font-weight: normal;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 1;
+  a{
+    color: $graytext;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-block: 20px;
+    &:hover{
+      background-color: transparentize(white, 0);
+      box-shadow: 0 0 10px transparentize(black, .9);
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .main-menu{
+    position: static;
+    background: none;
+    height: auto;
+    margin-left: 20px;
+    z-index: 10;
+  }
+  .main-menu__list{
+    display: flex;
+    gap: 8px;
+
+  }
+  .main-menu__link{
+    background: none;
+    margin: 0;
+    font-weight: normal;
+    position: static;
+    transition: color .3s;
+    a{
+      padding:10px;
+      box-sizing: border-box;
+      &:hover{
+        color: $darkred;
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+

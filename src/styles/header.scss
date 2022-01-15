@@ -1,0 +1,45 @@
+@import "_colors.scss";
+
+.header{
+  background-color: white;
+  height: 60px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 10px 20px #6664;
+}
+
+.header__nav{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100%;
+  gap: 8px;
+}
+
+.header__logo{
+  height: 100%;
+  align-self: center;
+  display: block;
+  margin: 0;
+  justify-self: center;
+}
+
+.header__switch{
+  border: none;
+  background: none;
+  color: $darkred;
+  font-weight: bold;
+  width: 100px;
+  text-align: right;
+  justify-self: flex-end;
+}
+
+@media (min-width: 1024px){
+  .header__nav{
+    display: flex;
+  }
+}

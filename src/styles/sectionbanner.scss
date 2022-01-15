@@ -1,0 +1,50 @@
+@import "_colors.scss";
+
+.top-banner{
+  width: 100%;
+  background-color: #ddd;
+}
+
+.top-banner__area{
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  h1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    background-color: transparentize(black, .4);
+    padding: 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px){
+  .top-banner__area{
+    aspect-ratio: 2/1;
+    h1{
+      padding: 20px;
+      font-size: 48px;
+    }
+  }
+}
+
+@media (min-width: 1025px){
+  .top-banner__area{
+    aspect-ratio: 3/1;
+    h1{
+      font-size: 60px;
+    }
+  }
+}
