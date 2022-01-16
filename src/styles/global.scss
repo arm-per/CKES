@@ -67,6 +67,8 @@ body{
   border: none;
   border-top-left-radius: 5px;
   font-size: 18px;
+  text-decoration: none;
+  font-family: sans-serif;
   &:hover{
     background-color: lighten($darkred, 5%)
   }

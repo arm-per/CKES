@@ -10,7 +10,7 @@ const SectionBanner = ({bg, children}) => {
     }
 
     return (
-        <section className={"top-banner"}>
+        <main className={"top-banner"}>
             <div className="container-full">
                 <div className="top-banner__area" style={background}>
                     <img src="" alt=""/>
@@ -19,7 +19,7 @@ const SectionBanner = ({bg, children}) => {
                     }
                 </div>
             </div>
-        </section>
+        </main>
     )
 }
 

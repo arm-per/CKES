@@ -1,5 +1,9 @@
 @import "_colors.scss";
 
+section{
+  margin-block: 40px;
+}
+
 .section__icon{
   display: flex;
   justify-content: center;
@@ -102,14 +106,18 @@
 .quote__container{
   display: block;
   position: relative;
+  max-width: 960px;
+  width: 100%;
+  margin-block: 40px;
 }
 
 .quote__background{
   display: block;
-  max-width: 100%;
+  max-width: 960px;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  margin-inline: auto;
 }
 
 .quote__text{
@@ -174,6 +182,9 @@
   font-family: sans-serif;
   padding: 15px;
   text-align: center;
+  &:hover{
+    background: lighten($bright-blue, 10%);
+  }
 }
 
 .section__card-paragraph{
@@ -182,18 +193,90 @@
   margin-block: 8px;
 }
 
+
+
+.section__form{
+  background: $darkgray;
+  padding-block: 20px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  div{
+    margin-inline: auto;
+    width: 100%;
+    max-width: 480px;
+  }
+  label{
+    color: $darkred;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input{
+    height: 50px;
+    padding-inline: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    &::placeholder{
+      color: #666666;
+    }
+  }
+}
+
+.section__form-title{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.section__button-form{
+  background-color: $darkred;
+  display: block;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin-inline: auto;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  &:hover{
+    background-color: lighten($darkred, 10%);
+  }
+}
+
+
 @media (min-width: 768px){
   .quote__background{
     aspect-ratio: 3/1;
   }
   .quote__text{
     font-size: 28px;
+    max-width: 80%;
+    box-sizing: border-box;
+  }
+  .section__card-container--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    max-width: 960px;
+    margin-inline: auto;
   }
 }
 
 @media (min-width: 1025px){
   .quote__text{
-    width: 960px;
-    left: calc(50% - 480px);
+    width: 768px;
+    left: calc(50% - 384px);
   }
 }

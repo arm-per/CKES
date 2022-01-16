@@ -9,6 +9,7 @@ import cart from "Assets/cart.svg";
 import customer from "Assets/customer.svg";
 import SolutionCard from "Components/SolutionCard";
 import CardContainer from "Components/CardContainer";
+import SectionForm from "Components/SectionForm";
 
 const Kitchen = () => {
     return (
@@ -40,7 +41,7 @@ const Kitchen = () => {
                 <SolutionCard title={"CKES Refrigeration"} image={image} description={"lorem ipsum dolor sit amet consecuotor"}/>
                 <SolutionCard title={"CKES Refrigeration"} image={image} description={"lorem ipsum dolor sit amet consecuotor"}/>
             </CardContainer>
-
+            <SectionForm/>
         </>
     )
 }
