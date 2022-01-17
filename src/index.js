@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./routes/App";
-import "./styles/global.scss";
+import App from './routes/App';
+import './styles/global.scss';
 
-const root = document.getElementById("app");
+const root = document.getElementById('app');
 
-ReactDOM.render(<App/>, root)
+ReactDOM.render(<App/>, root);
