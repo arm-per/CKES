@@ -15,7 +15,8 @@ const SectionBanner = ({bg, children, icon}) => {
         <div className="top-banner__area" style={background}>
           <div className={'top-banner__screen'}>
             {
-              icon && <img src={icon} alt="" className="top-banner__img"/>
+              icon && <img src={icon} alt="icon_section"
+                className="top-banner__img" width="80"/>
             }
             {
               children

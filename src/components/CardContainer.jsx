@@ -6,7 +6,7 @@ const CardContainer = ({children, icon, title}) => {
   return (
     <section className={'container'}>
       <div className={'section__icon'}>
-        <img src={icon} alt={`${title}-icon`}/>
+        <img src={icon} alt={`${title}-icon`} loading={'lazy'}/>
       </div>
       <h2 className={'section__title'}>{title}</h2>
       <div className="section__card-container--grid">

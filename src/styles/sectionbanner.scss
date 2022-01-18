@@ -7,7 +7,9 @@
 
 .top-banner__area{
   width: 100%;
+  margin: 0 auto;
   aspect-ratio: 16/9;
+  overflow: hidden;
   .top-banner__screen{
     background-color: transparentize(black, .4);
     width: 100%;

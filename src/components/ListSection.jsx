@@ -6,7 +6,7 @@ const ListSection = ({icon, title, listItems}) => {
   return (
     <section className={'container'}>
       <div className={'section__icon'}>
-        <img src={icon} alt={`${title}-icon`}/>
+        <img src={icon} alt={`${title}-icon`} loading={'lazy'} width="40"/>
       </div>
       <h2 className={'section__title'}>{title}</h2>
       <ul className="section__list">

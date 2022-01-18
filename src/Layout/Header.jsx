@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import LanguageSwitcher from 'Helpers/LanguageSwitcher';
 import logo from 'Assets/logo.png';
+import {Link} from 'react-router-dom';
 import 'Styles/header.scss';
 import MenuButton from 'Helpers/MenuButton';
 import MainMenu from 'Components/MainMenu';
@@ -18,8 +19,10 @@ const Header = () => {
         <nav className="header__nav container">
           <MenuButton onClick={ShowMenuHandler}
             className={showMenu?'active':''}/>
-          <img src={logo} alt="logotipo ckes"
-            className="header__logo" />
+          <Link to={'/'} className="header__nav-logolink">
+            <img src={logo} alt="logotipo ckes"
+              className="header__logo" width="120"/>
+          </Link>
           <MainMenu className={ showMenu ?'show':'' }
             onClick={ShowMenuHandler}/>
           <LanguageSwitcher className={'header__switch'}/>

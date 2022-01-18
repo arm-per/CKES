@@ -8,10 +8,10 @@ const SolutionCard = ({title, image, description}) => {
     <article className="section__card">
       <div className="section__card-container">
         <div className="section__card-image">
-          <img src={image} alt={`${title}-img`}/>
+          <img src={image} alt={`${title}-img`} width="90"/>
         </div>
         <div className="section__card-text">
-          <h4 className="section__card-title">{title}</h4>
+          <h3 className="section__card-title">{title}</h3>
           <p className="section__card-paragraph">
             {
               description

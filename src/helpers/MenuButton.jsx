@@ -7,8 +7,9 @@ const MenuButton = ({onClick, className}) => {
   };
 
   return (
-    <button onClick={activeHandler} className={`menu-btn ${className}`}>
-
+    <button onClick={activeHandler} className={`menu-btn ${className}`}
+      title="menu">
+      <span>Menu</span>
     </button>
   );
 };

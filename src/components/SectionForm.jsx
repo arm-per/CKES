@@ -11,22 +11,32 @@ const SectionForm = () => {
         <div>
           <label htmlFor="name">Full name</label>
           <input type="text" name="name" id="name"
-            placeholder={'Eg. John Peterson'}/>
+            placeholder={'Eg. John Peterson'} required={true}/>
         </div>
         <div>
           <label htmlFor="company">Company name</label>
           <input type="text" name="company" id="company"
-            placeholder={'Eg. Peterson and Burgers'}/>
+            placeholder={'Eg. Peterson and Burgers'} required={true}/>
         </div>
         <div>
           <label htmlFor="phone">Mobile phone</label>
           <input type="phone" name="phone" id="phone"
-            placeholder={'Eg. 913 5555 4321'}/>
+            placeholder={'Eg. 913 5555 4321'} required={true}/>
         </div>
         <div>
           <label htmlFor="email">Email</label>
           <input type="email" name="email" id="email"
-            placeholder={'Eg. myemail@mail.com'}/>
+            placeholder={'Eg. myemail@mail.com'} required={true}/>
+        </div>
+        <div className="section__form-checkbox">
+          <input type="checkbox" id="data-agreement" required={true}/>
+          <label htmlFor="data-agreement">I agree my data to be used by CKES
+            for selling and marketing.</label>
+        </div>
+        <div className="section__form-checkbox">
+          <input type="checkbox" id="privacy" required={true}/>
+          <label htmlFor="privacy">I have read and agree the privacy
+            policy provided by CKES.</label>
         </div>
         <input type="submit" className="section__button-form"
           value={'I want to be contacted'}/>

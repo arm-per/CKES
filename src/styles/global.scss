@@ -10,7 +10,7 @@ body{
   box-sizing: border-box;
   width: 100%;
   min-width: 320px;
-  max-width: 1440px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -18,7 +18,7 @@ body{
   box-sizing: border-box;
   width: 100%;
   min-width: 320px;
-  max-width: 1440px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -29,6 +29,9 @@ body{
   position: relative;
   border: none;
   background: none;
+  span{
+    display: none;
+  }
   &::before{
     content: "";
     width: 30px;
@@ -72,6 +75,12 @@ body{
   &:hover{
     background-color: lighten($darkred, 5%)
   }
+}
+
+.imagebreaker{
+  width: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
 }
 
 @media (min-width: 1024px){
