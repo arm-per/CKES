@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:22.9256;">
+    <g transform="matrix(1,0,0,1,-1430,0)">
+        <g id="Electrical" transform="matrix(0.0900883,0,0,0.0900883,1415.21,108.362)">
+            <rect x="169.897" y="-1202.84" width="532.811" height="532.811" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="169.897" y="-1202.84" width="532.811" height="532.811"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(5.94995,0,0,5.94995,-2349.91,-3208.94)">
+                    <g transform="matrix(-1,0,0,1,936.552,-28.1271)">
+                        <path d="M468.276,365.289C443.547,365.289 423.501,385.335 423.501,410.064C423.501,434.792 443.547,454.838 468.276,454.838C493.004,454.838 513.05,434.792 513.05,410.064C513.05,385.335 493.004,365.289 468.276,365.289" style="fill:rgb(174,39,30);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,4.54747e-13,-25.1345)">
+                        <path d="M471.359,403.934L479.923,376.696L453.528,413.201L469.253,413.201L459.284,440.438L486.241,404.074L471.359,403.934Z" style="fill:white;stroke:white;stroke-width:1.87px;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -11,7 +11,7 @@ import SolutionCard from 'Components/SolutionCard';
 import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
-import icon from 'Assets/kitchen_icon.svg';
+import icon from 'Assets/AirConditioner-icon.svg';
 import bg from 'Assets/main-banner.jpg';
 import ImageBreaker from 'Components/ImageBraker';
 
@@ -22,20 +22,30 @@ const AirConditioner = () => {
         <h1>Air conditioner</h1>
       </SectionBanner>
       <FirstSection
-        title={'Safe and fresh food for longer'}
+        title={'Air Conditioning and Heating\n' +
+            'Is the core of your work'}
         icon={mainIcon}
       >
-        Are you looking for an effective and efficient refrigeration products
-        to keep all your items safe, cold and fresh? We got the solution.
-        <br/>Doesn’t matter if your business is small, medium or big, our
-        product catalogue are adaptive to every needs, just let our experts
-        advise you and choose the perfect choice.
+          Comfort. Because of newer technology,
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+          today's HVAC equipment produces more even
+          heating, helps maintain a constant temperature
+          in every room in your home, provides consistent
+          levels of air flow, and has superior humidity
+          control. All of that adds up to a more
+          comfortable home to live in.
       </FirstSection>
       <ImageBreaker title={'Kitchen'} img={image}/>
       <ListSection
         icon={cart}
         title={'Which products and services do we offer?'}
-        listItems={['Elemento 1', 'Elemento 2']}
+        listItems={['Mini Split',
+          'Air Conditioners, furnaces and heat pumps',
+          'Roof Top units',
+          'Natural gas, electric and propane heaters',
+          'Cooling Towers', 'Gas Line installation',
+          'Boilers hot water and steam heat',
+          'Water source and geothermal heat pumps']}
       />
       <QuoteSection image={image}>
         Our refrigerators help you to keep all of your items cold,
@@ -45,11 +55,8 @@ const AirConditioner = () => {
         title={'Advisory'}
         icon={customer}
       >
-        We understand how important is to you to get high quality products
-        to make your business grow up. Our advisors can help you to find the
-        refrigerator or freezer you were looking for. We accompany you until
-
-        you find the product that match your business and a nice deal of course.
+          The benefits of maintenance contracts include financial
+          savings, product quality assurance, and peace of mind.
       </FirstSection>
       <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard

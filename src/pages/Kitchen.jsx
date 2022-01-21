@@ -11,7 +11,7 @@ import SolutionCard from 'Components/SolutionCard';
 import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
-import icon from 'Assets/kitchen_icon.svg';
+import icon from 'Assets/Kitchens-icon.svg';
 import bg from 'Assets/main-banner.jpg';
 import ImageBreaker from 'Components/ImageBraker';
 
@@ -22,14 +22,13 @@ const Kitchen = () => {
         <h1>Kitchens</h1>
       </SectionBanner>
       <FirstSection
-        title={'Safe and fresh food for longer'}
+        title={'Kitchen is the heart of your business'}
         icon={mainIcon}
       >
-          Are you looking for an effective and efficient refrigeration products
-        to keep all your items safe, cold and fresh? We got the solution.
-        <br/>Doesn’t matter if your business is small, medium or big, our
-        product catalogue are adaptive to every needs, just let our experts
-        advise you and choose the perfect choice.
+          Some say that while life may be created in the
+          bedroom, it is certainly lived in the kitchen. It
+          is where the meals are created – it fuels the bodies,
+          minds and souls of friends and families all over the world
       </FirstSection>
       <ImageBreaker title={'Kitchen'} img={image}/>
       <ListSection
@@ -45,11 +44,9 @@ const Kitchen = () => {
         title={'Advisory'}
         icon={customer}
       >
-        We understand how important is to you to get high quality products
-        to make your business grow up. Our advisors can help you to find the
-        refrigerator or freezer you were looking for. We accompany you until
-
-        you find the product that match your business and a nice deal of course.
+          Commercial kitchens should have as a minimum a deep
+          clean every 12 months. Cleaning the exhaust hood and
+          ductwork takes an average of 2-5 hours.
       </FirstSection>
       <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard

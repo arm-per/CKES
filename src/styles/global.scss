@@ -79,10 +79,15 @@ body{
 
 .imagebreaker{
   width: 100%;
-  aspect-ratio: 3/1;
+  aspect-ratio: 2/1;
   object-fit: cover;
 }
 
+@media (min-width: 768px){
+  .imagebreaker{
+    aspect-ratio: 3/1;
+  }
+}
 @media (min-width: 1024px){
   .menu-btn{
     display: none;

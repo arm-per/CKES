@@ -1,0 +1,27 @@
+{
+  "author": "DOS17 Digital",
+  "short_name": "CKES",
+  "name": "Commercial Kitchen Services",
+  "version": "1.0",
+  "start_url": ".",
+  "background_color": "#AE271E",
+  "display": "standalone",
+  "theme_color":"#AE271E",
+  "icons": [
+    {
+      "src": "launcher-icon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "launcher-icon-4x.png",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "launcher-icon-512.png",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ]
+}
