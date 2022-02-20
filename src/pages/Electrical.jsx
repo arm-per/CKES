@@ -1,21 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
-import supportIcon from 'Assets/advisory.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/main-banner.jpg';
+import image from 'Assets/Electricity/electrity2.webp';
+import image2 from 'Assets/Electricity/electrity3.webp';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
-import SolutionCard from 'Components/SolutionCard';
-import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/Electrical-icon.svg';
-import bg from 'Assets/main-banner.jpg';
+import bg from 'Assets/Electricity/electrity1.webp';
 import ImageBreaker from 'Components/ImageBraker';
+import {scrollTop} from "../utilities/scrollTop";
 
 const Electrical = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return (
     <>
       <SectionBanner bg={bg} icon={icon}>
@@ -36,12 +39,15 @@ const Electrical = () => {
       <ImageBreaker title={'Kitchen'} img={image}/>
       <ListSection
         icon={cart}
-        title={'Which products and services do we offer?'}
-        listItems={['Elemento 1', 'Elemento 2']}
+        title={'Services we offer'}
+        listItems={['Electrical repair', 'Circuit breaker',
+          'Electrical wiring', 'Electrical panels', 'Ceiling fans',
+          'Generators', 'Light switches and outlets',
+          'Indoor and outdoor lighting', 'Commercial electrical service']}
       />
-      <QuoteSection image={image}>
-        Our refrigerators help you to keep all of your items cold,
-        fresh and safe.
+      <QuoteSection image={image2}>
+          Our electrical installation service uses the high quality materials
+          to grant long-term useful life and your safety of course.
       </QuoteSection>
       <FirstSection
         title={'Advisory'}
@@ -52,7 +58,8 @@ const Electrical = () => {
           Shock, Arc Flash/Blast, Fire and Explosions. We ensure
           your electrical installation works as new ones.
       </FirstSection>
-      <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
+      {/* eslint-disable-next-line max-len */}
+      { /* <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard
           title={'CKES Refrigeration'}
           image={image}
@@ -69,7 +76,7 @@ const Electrical = () => {
           title={'CKES Refrigeration'}
           image={image}
           description={'lorem ipsum dolor sit amet consecuotor'}/>
-      </CardContainer>
+      </CardContainer>*/ }
       <SectionForm/>
     </>
   );

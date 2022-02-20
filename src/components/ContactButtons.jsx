@@ -8,7 +8,7 @@ const ContactButtons = () => {
     <div className="contact-grid">
       <div>
         <div className={'section__icon'}>
-          <a href="tel:1234567890">
+          <a href={`tel:${'913-333-7184'.split('-').join('')}`}>
             <img src={phone} alt={`phone-icon`} loading={'lazy'} width="40"/>
           </a>
         </div>
@@ -16,7 +16,7 @@ const ContactButtons = () => {
       </div>
       <div>
         <div className={'section__icon'}>
-          <a href="mailto:frankc@callcks.com">
+          <a href="mailto:service@callcks.com">
             <img src={mail} alt={`mail-icon`} loading={'lazy'} width="40"/>
           </a>
         </div>
@@ -29,7 +29,7 @@ const ContactButtons = () => {
             <img src={pin} alt={`pin-icon`} loading={'lazy'} width="40"/>
           </a>
         </div>
-          <p>Find Us</p>
+        <p>Find Us</p>
       </div>
 
     </div>

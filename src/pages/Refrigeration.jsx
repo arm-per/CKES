@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
 import supportIcon from 'Assets/advisory.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/main-banner.jpg';
+import image from 'Assets/Refrigeration/bar-fridge-1200.webp';
+import image2 from 'Assets/Refrigeration/market-fridge-1200.webp';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
 import SolutionCard from 'Components/SolutionCard';
@@ -12,10 +13,18 @@ import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/Refrigeration-icon.svg';
-import bg from 'Assets/main-banner.jpg';
+import bg from 'Assets/Refrigeration/long-market-fridge-1200.webp';
 import ImageBreaker from 'Components/ImageBraker';
+import walkinfreezer from 'Assets/walkindoor.jpg';
+import icemaker from 'Assets/icemaker.jpg';
+import exhaust from 'Assets/exhausthood.jpg';
+import {scrollTop} from '../utilities/scrollTop';
 
 const Refrigeration = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return (
     <>
       <SectionBanner bg={bg} icon={icon}>
@@ -41,7 +50,7 @@ const Refrigeration = () => {
           'Rack systems.', 'Ultra low temperature cooling',
           'Walk in Cooler and Freezer']}
       />
-      <QuoteSection image={image}>
+      <QuoteSection image={image2}>
         Our refrigerators help you to keep all of your items cold,
         fresh and safe.
       </QuoteSection>
@@ -57,28 +66,24 @@ const Refrigeration = () => {
       <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard
           title={'Walk in coolers and freezers'}
-          image={image}
+          image={walkinfreezer}
           description={'Manufacturers estimate the average lifespan of a' +
-              'walk-in cooler or freezer to be about 15 years. However,' +
+              'walk-in cooler or freezer to be about 15 years. However, ' +
               'with decent care and maintenance, they can last well' +
-              'beyond that….'}/>
+              'beyond that…'}/>
         <SolutionCard
           title={'Ice Makers'}
-          image={image}
+          image={icemaker}
           description={'The beauty of ice is that it\'s a high profit' +
               'product – it costs about $0.25 – $0.35 in raw material' +
               'to produce an ice bag that might sell for $1.50 and $3'}/>
         <SolutionCard
           title={'Exhaust Hood'}
-          image={image}
+          image={exhaust}
           description={'Type 1 hoods are to be used with appliances' +
               'that produce grease and smoke. ... Type 2 hoods are' +
               'to be used with appliances that produce only heat and' +
               'steam and no grease or smoke.'}/>
-        <SolutionCard
-          title={'CKES Refrigeration'}
-          image={image}
-          description={'lorem ipsum dolor sit amet consecuotor'}/>
       </CardContainer>
       <SectionForm/>
     </>

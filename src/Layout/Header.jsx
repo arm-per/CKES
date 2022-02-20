@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import LanguageSwitcher from 'Helpers/LanguageSwitcher';
 import logo from 'Assets/logo.png';
 import {Link} from 'react-router-dom';
 import 'Styles/header.scss';
@@ -25,7 +24,6 @@ const Header = () => {
           </Link>
           <MainMenu className={ showMenu ?'show':'' }
             onClick={ShowMenuHandler}/>
-          <LanguageSwitcher className={'header__switch'}/>
         </nav>
       </header>
     </>

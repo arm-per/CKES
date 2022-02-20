@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import SectionBanner from 'Components/SectionBanner';
-import bg from 'Assets/main-banner.jpg';
+import bg from 'Assets/kansas.webp';
+import bg2 from 'Assets/teamwork.webp';
 import ActionButton from 'Components/ActionButton';
 import IconCardGrid from '../components/IconCardGrid';
 import IconCards from '../components/IconCards';
@@ -11,8 +12,14 @@ import kitchenIcon from 'Assets/Kitchens-icon.svg';
 import Customers from '../components/Customers';
 import SectionForm from '../components/SectionForm';
 import ImageBraker from '../components/ImageBraker';
+import {SupportBanner} from '../components/SupportBanner';
+import {scrollTop} from '../utilities/scrollTop';
 
 const Home = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return (
     <>
       <SectionBanner
@@ -62,7 +69,7 @@ const Home = () => {
               No more worries, we are the ones you can trust.
           </p>
         </section>
-        <ImageBraker img={bg}/>
+        <ImageBraker img={bg2}/>
         <h2 className={'section__title'}>They trust in CKES</h2>
         <Customers/>
         <section>
@@ -73,6 +80,7 @@ const Home = () => {
                   when you need. Doesn't matter if it’s morning,
                   evening or night, we are a call away.
           </p>
+          <SupportBanner/>
         </section>
         <section>
           <h2 className={'section__title'}>Looking for

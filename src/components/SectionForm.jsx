@@ -3,7 +3,7 @@ import 'Styles/sections.scss';
 
 const SectionForm = () => {
   return (
-    <form className="section__form">
+    <form className="section__form" method={'POST'} action='mail.php'>
       <div className="container">
         <h2 className={'section__form-title'}>
           Give us your information and we´ll contact you
@@ -29,7 +29,7 @@ const SectionForm = () => {
             placeholder={'Eg. myemail@mail.com'} required={true}/>
         </div>
         <div className="section__form-checkbox">
-          <input type="checkbox" id="data-agreement" required={true}/>
+          <input type="checkbox" id="data-agreement" name="marketing" required={true}/>
           <label htmlFor="data-agreement">I agree my data to be used by CKES
             for selling and marketing.</label>
         </div>

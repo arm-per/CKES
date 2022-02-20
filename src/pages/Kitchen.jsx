@@ -1,21 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
-import supportIcon from 'Assets/advisory.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/main-banner.jpg';
+import image from 'Assets/Kitchen/modern-equipment-1200.webp';
+import image2 from 'Assets/Kitchen/stove-1200.webp';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
-import SolutionCard from 'Components/SolutionCard';
-import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/Kitchens-icon.svg';
-import bg from 'Assets/main-banner.jpg';
+import bg from 'Assets/Kitchen/restaurant-1200.webp';
 import ImageBreaker from 'Components/ImageBraker';
+import {scrollTop} from '../utilities/scrollTop';
 
 const Kitchen = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return (
     <>
       <SectionBanner bg={bg} icon={icon}>
@@ -30,15 +33,18 @@ const Kitchen = () => {
           is where the meals are created – it fuels the bodies,
           minds and souls of friends and families all over the world
       </FirstSection>
-      <ImageBreaker title={'Kitchen'} img={image}/>
+      <ImageBreaker title={'Kitchen'} img={image2}/>
       <ListSection
         icon={cart}
-        title={'Which products and services do we offer?'}
-        listItems={['Elemento 1', 'Elemento 2']}
+        title={'Services we offer'}
+        listItems={['Exhaust Hoods', 'Ovens gas and electric',
+          'Deep fryers', 'Grills', 'Griddles and panini',
+          'Range', 'Microwaves', 'Pizza ovens',
+          'Kettle electric and steam', 'Gas line installation']}
       />
       <QuoteSection image={image}>
-        Our refrigerators help you to keep all of your items cold,
-        fresh and safe.
+          Our kitchen equipment is the perfect pal to cook
+          your delicious recipes that your customers love.
       </QuoteSection>
       <FirstSection
         title={'Advisory'}
@@ -48,7 +54,8 @@ const Kitchen = () => {
           clean every 12 months. Cleaning the exhaust hood and
           ductwork takes an average of 2-5 hours.
       </FirstSection>
-      <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
+      {/* eslint-disable-next-line max-len */}
+      {/* <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard
           title={'CKES Refrigeration'}
           image={image}
@@ -65,7 +72,7 @@ const Kitchen = () => {
           title={'CKES Refrigeration'}
           image={image}
           description={'lorem ipsum dolor sit amet consecuotor'}/>
-      </CardContainer>
+      </CardContainer> */}
       <SectionForm/>
     </>
   );

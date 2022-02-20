@@ -60,6 +60,10 @@
       background-color: transparentize(white, 0);
       box-shadow: 0 0 10px transparentize(black, .9);
     }
+    &.active{
+      border-bottom: 3px solid $darkred;
+      color: $darkred;
+    }
   }
 }
 

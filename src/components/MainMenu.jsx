@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import 'Styles/mainmenu.scss';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const MainMenu = ({className, onClick}) => {
   const DisableMenuHandler = () => {
@@ -12,28 +12,28 @@ const MainMenu = ({className, onClick}) => {
     <div className={'main-menu ' + className}>
       <ul className={'main-menu__list'}>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/'}>Home</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/'}>Home</NavLink>
         </li>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/kitchens'}>Kitchens</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/kitchens'}>Kitchens</NavLink>
         </li>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/air-conditioner'}>Air Conditioner</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/air-conditioner'}>Air Conditioner</NavLink>
         </li>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/refrigeration'}>Refrigeration</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/refrigeration'}>Refrigeration</NavLink>
         </li>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/electrical'}>Electrical</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/electrical'}>Electrical</NavLink>
         </li>
         <li className={'main-menu__link'}>
-          <Link onClick={DisableMenuHandler}
-            to={'/contact'}>Contact</Link>
+          <NavLink onClick={DisableMenuHandler}
+            to={'/contact'}>Contact</NavLink>
         </li>
       </ul>
     </div>

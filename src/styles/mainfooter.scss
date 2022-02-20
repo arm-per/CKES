@@ -92,4 +92,10 @@
     grid-row-start: 1;
     grid-row-end: 3;
   }
+  .footer__sitemap-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

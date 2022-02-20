@@ -1,21 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
-import supportIcon from 'Assets/advisory.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/main-banner.jpg';
+import image from 'Assets/AirConditioner/air-system-1200.webp';
+import image2 from 'Assets/AirConditioner/ventilation-1200.webp';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
-import SolutionCard from 'Components/SolutionCard';
-import CardContainer from 'Components/CardContainer';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/AirConditioner-icon.svg';
-import bg from 'Assets/main-banner.jpg';
+import bg from 'Assets/AirConditioner/air-conditioner-1200.webp';
 import ImageBreaker from 'Components/ImageBraker';
+import {scrollTop} from '../utilities/scrollTop';
 
 const AirConditioner = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return (
     <>
       <SectionBanner bg={bg} icon={icon}>
@@ -35,10 +38,10 @@ const AirConditioner = () => {
           control. All of that adds up to a more
           comfortable home to live in.
       </FirstSection>
-      <ImageBreaker title={'Kitchen'} img={image}/>
+      <ImageBreaker title={'Air-conditioner'} img={image}/>
       <ListSection
         icon={cart}
-        title={'Which products and services do we offer?'}
+        title={'Services we offer'}
         listItems={['Mini Split',
           'Air Conditioners, furnaces and heat pumps',
           'Roof Top units',
@@ -47,9 +50,9 @@ const AirConditioner = () => {
           'Boilers hot water and steam heat',
           'Water source and geothermal heat pumps']}
       />
-      <QuoteSection image={image}>
-        Our refrigerators help you to keep all of your items cold,
-        fresh and safe.
+      <QuoteSection image={image2}>
+        Make your restaurant and inn with the perfect weather all time,
+          and grant your customers to feel in greatest comfort.
       </QuoteSection>
       <FirstSection
         title={'Advisory'}
@@ -58,7 +61,8 @@ const AirConditioner = () => {
           The benefits of maintenance contracts include financial
           savings, product quality assurance, and peace of mind.
       </FirstSection>
-      <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
+      {/* eslint-disable-next-line max-len */}
+      {/* <CardContainer title={'Some of our solutions for you'} icon={supportIcon}>
         <SolutionCard
           title={'CKES Refrigeration'}
           image={image}
@@ -75,7 +79,7 @@ const AirConditioner = () => {
           title={'CKES Refrigeration'}
           image={image}
           description={'lorem ipsum dolor sit amet consecuotor'}/>
-      </CardContainer>
+      </CardContainer> */}
       <SectionForm/>
     </>
   );

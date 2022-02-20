@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import SectionForm from '../components/SectionForm';
 import Map from '../components/Map';
 import Icons from '../components/Icons';
 import ContactButtons from '../components/ContactButtons';
+import {scrollTop} from '../utilities/scrollTop';
 
 const Contact = () => {
+  useEffect(()=>{
+    scrollTop();
+  }, []);
+
   return <main>
     <div className="container">
 
