@@ -3,14 +3,14 @@ import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/Kitchen/modern-equipment-1200.webp';
-import image2 from 'Assets/Kitchen/stove-1200.webp';
+import image from 'Assets/Kitchen/modern-equipment-1200.jpg';
+import image2 from 'Assets/Kitchen/stove-1200.jpg';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/Kitchens-icon.svg';
-import bg from 'Assets/Kitchen/restaurant-1200.webp';
+import bg from 'Assets/Kitchen/restaurant-1200.jpg';
 import ImageBreaker from 'Components/ImageBraker';
 import {scrollTop} from '../utilities/scrollTop';
 

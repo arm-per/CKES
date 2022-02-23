@@ -3,14 +3,14 @@ import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/AirConditioner/air-system-1200.webp';
-import image2 from 'Assets/AirConditioner/ventilation-1200.webp';
+import image from 'Assets/AirConditioner/air-system-1200.jpg';
+import image2 from 'Assets/AirConditioner/ventilation-1200.jpg';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/AirConditioner-icon.svg';
-import bg from 'Assets/AirConditioner/air-conditioner-1200.webp';
+import bg from 'Assets/AirConditioner/air-conditioner-1200.jpg';
 import ImageBreaker from 'Components/ImageBraker';
 import {scrollTop} from '../utilities/scrollTop';
 

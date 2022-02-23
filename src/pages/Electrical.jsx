@@ -3,16 +3,16 @@ import FirstSection from 'Components/FirstSection';
 import ListSection from 'Components/ListSection';
 import mainIcon from 'Assets/shield-fill.svg';
 import QuoteSection from 'Components/QuoteSection';
-import image from 'Assets/Electricity/electrity2.webp';
-import image2 from 'Assets/Electricity/electrity3.webp';
+import image from 'Assets/Electricity/electrity2.jpg';
+import image2 from 'Assets/Electricity/electrity3.jpg';
 import cart from 'Assets/cart.svg';
 import customer from 'Assets/customer.svg';
 import SectionForm from 'Components/SectionForm';
 import SectionBanner from 'Components/SectionBanner';
 import icon from 'Assets/Electrical-icon.svg';
-import bg from 'Assets/Electricity/electrity1.webp';
+import bg from 'Assets/Electricity/electrity1.jpg';
 import ImageBreaker from 'Components/ImageBraker';
-import {scrollTop} from "../utilities/scrollTop";
+import {scrollTop} from '../utilities/scrollTop';
 
 const Electrical = () => {
   useEffect(()=>{

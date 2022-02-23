@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import SectionBanner from 'Components/SectionBanner';
-import bg from 'Assets/kansas.webp';
-import bg2 from 'Assets/teamwork.webp';
+import bg from 'Assets/kansas.jpg';
+import bg2 from 'Assets/teamwork.jpg';
 import ActionButton from 'Components/ActionButton';
 import IconCardGrid from '../components/IconCardGrid';
 import IconCards from '../components/IconCards';
